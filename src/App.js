@@ -1,13 +1,25 @@
 import "./App.css";
 import Button from "./components/Button";
+// import { Button } from "./components/Button.styled";
 
 function App() {
 	return (
 		<div className="wrapper">
-			<Button color="default">Default</Button>
-			<Button primary>Primary</Button>
-			<Button secondary>Secondary</Button>
-			<Button danger>Danger</Button>
+			<>
+				<h1>Buttons</h1>
+				<Button />
+				<Button variant="outline" />
+				<Button variant="text" />
+				<Button disableshadow />
+				<Button disabled />
+				<Button variant="text" disabled />
+				<div className="color-wrapper">
+					<Button color="default" />
+					<Button color="primary" />
+					<Button color="secondary" />
+					<Button color="danger" />
+				</div>
+			</>
 		</div>
 	);
 }
