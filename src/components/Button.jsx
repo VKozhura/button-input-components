@@ -1,11 +1,16 @@
 import classNames from "classnames";
+import styles from "./Button.module.css";
 
 const Button = ({ variant, disabled, disableshadow, color }) => {
 	const btnClass = classNames({
-		btn: true,
-		[`btn-${variant}`]: variant !== undefined,
-		"btn-no-shadow": disableshadow,
-		[`btn-${color}`]: color !== undefined,
+		[styles.btn]: true,
+		[styles.btnOutline]: variant === "outline",
+		[styles.btnText]: variant === "text",
+		[styles.btnNoShadow]: disableshadow,
+		[styles.btnDefault]: color === "default",
+		[styles.btnPrimary]: color === "primary",
+		[styles.btnSecondary]: color === "secondary",
+		[styles.btnDanger]: color === "danger",
 	});
 	return (
 		<div>

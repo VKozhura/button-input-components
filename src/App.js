@@ -4,16 +4,21 @@ import Button from "./components/Button";
 
 function App() {
 	return (
-		<div className="wrapper">
+		<div className="container">
 			<>
 				<h1>Buttons</h1>
 				<Button />
 				<Button variant="outline" />
 				<Button variant="text" />
 				<Button disableshadow />
-				<Button disabled />
-				<Button variant="text" disabled />
-				<div className="color-wrapper">
+				<div className="wrapper">
+					<Button disabled />
+					<Button variant="text" disabled />
+				</div>
+				<div className="wrapper">
+					<Button start-icon />
+				</div>
+				<div className="wrapper">
 					<Button color="default" />
 					<Button color="primary" />
 					<Button color="secondary" />
