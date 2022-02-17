@@ -1,13 +1,12 @@
 .btn,
 .btnDefault {
 	display: block;
-	min-width: 81px;
-	padding: 8px;
+	padding: 8px 16px;
 	margin-bottom: 20px;
 	margin-right: 100px;
 	cursor: pointer;
 	font-size: 14px;
-	line-height: 1;
+	line-height: 21px;
 	text-align: center;
 	border: none;
 	border-radius: 6px;
@@ -97,4 +96,70 @@
 .btnDanger:focus,
 .btnDanger:hover {
 	background-color: #9a0007;
+}
+
+.btnStartIcon {
+	position: relative;
+	background-color: #2962ff;
+	color: #ffffff;
+	padding-left: 40px;
+}
+
+.btnStartIcon span::before {
+	content: "";
+	display: inline-block;
+	background-image: url(./../../public/img/add-shopping-cart.svg);
+	background-size: contain;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 17px;
+	top: 11px;
+}
+
+.btnEndIcon {
+	position: relative;
+	background-color: #2962ff;
+	color: #ffffff;
+	padding-right: 40px;
+}
+
+.btnEndIcon span::after {
+	content: "";
+	display: inline-block;
+	background-image: url(./../../public/img/add-shopping-cart.svg);
+	background-size: contain;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	right: 17px;
+	top: 11px;
+}
+
+.btnSmall,
+.btnMedium,
+.btnLarge {
+	background-color: #2962ff;
+	color: #ffffff;
+}
+
+.btnSmall:focus,
+.btnSmall:hover,
+.btnMedium:hover,
+.btnMedium:focus,
+.btnLarge:hover,
+.btnLarge:focus {
+	background-color: #0039cb;
+}
+
+.btnSmall {
+	padding: 6px 12px;
+}
+
+.btnMedium {
+	padding: 8px 16px;
+}
+
+.btnLarge {
+	padding: 11px 22px;
 }

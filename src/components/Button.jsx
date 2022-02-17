@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import styles from "./Button.module.css";
 
-const Button = ({ variant, disabled, disableshadow, color }) => {
+const Button = ({ variant, disabled, disableshadow, color, startIcon, endIcon, size }) => {
 	const btnClass = classNames({
 		[styles.btn]: true,
 		[styles.btnOutline]: variant === "outline",
@@ -11,6 +11,11 @@ const Button = ({ variant, disabled, disableshadow, color }) => {
 		[styles.btnPrimary]: color === "primary",
 		[styles.btnSecondary]: color === "secondary",
 		[styles.btnDanger]: color === "danger",
+		[styles.btnStartIcon]: startIcon !== undefined,
+		[styles.btnEndIcon]: endIcon !== undefined,
+		[styles.btnSmall]: size === "sm",
+		[styles.btnMedium]: size === "md",
+		[styles.btnLarge]: size === "lg",
 	});
 	return (
 		<div>
@@ -20,10 +25,13 @@ const Button = ({ variant, disabled, disableshadow, color }) => {
 				{disabled ? " disabled " : ""}
 				{disableshadow ? " disableshadow " : ""}
 				{color ? ` color='${color} '` : ""}
+				{startIcon ? ` startIcon='${startIcon} '` : ""}
+				{endIcon ? ` endIcon='${endIcon} '` : ""}
+				{size ? ` size='${size} '` : ""}
 				/&#8250;
 			</p>
 			<button className={btnClass} disabled={disabled}>
-				{disabled ? "Disabled" : "Default"}
+				<span>{disabled ? "Disabled" : "Default"}</span>
 			</button>
 		</div>
 	);
