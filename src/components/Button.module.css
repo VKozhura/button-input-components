@@ -108,7 +108,7 @@
 .btnStartIcon span::before {
 	content: "";
 	display: inline-block;
-	background-image: url(./../../public/img/add-shopping-cart.svg);
+	background-image: url(./../img/add-shopping-cart.svg);
 	background-size: contain;
 	width: 14px;
 	height: 14px;
@@ -127,7 +127,7 @@
 .btnEndIcon span::after {
 	content: "";
 	display: inline-block;
-	background-image: url(./../../public/img/add-shopping-cart.svg);
+	background-image: url(./../img/add-shopping-cart.svg);
 	background-size: contain;
 	width: 14px;
 	height: 14px;
