@@ -22,6 +22,8 @@ function App() {
 				<Input size="sm" />
 				<Input size="md" />
 			</div>
+			<Input fullwidth />
+			<Input multiline row="4" />
 
 			<h1>Buttons</h1>
 			<Button />

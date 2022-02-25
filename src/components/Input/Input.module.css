@@ -5,7 +5,6 @@
 
 .input,
 .inputMedium {
-	display: block;
 	width: 200px;
 	padding: 18px 12px;
 	border: 1px solid #828282;
@@ -75,4 +74,8 @@ label {
 
 .smallError {
 	color: #d32f2f;
+}
+
+.fullwidth {
+	width: 100%;
 }
