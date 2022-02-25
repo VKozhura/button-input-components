@@ -23,7 +23,7 @@ export const Input = ({ error, disabled, helperText, value, size, fullwidth, mul
 				{value ? ` value='${value}' ` : ""}
 				{size ? ` size='${size}' ` : ""}
 				{fullwidth ? ` fullwidth ` : ""}
-				{multiline ? ` multiline row='${row}' ` : ""}
+				{multiline ? ` multiline row='${row}'` : ""}
 				/&#8250;
 			</p>
 			{!multiline && (
